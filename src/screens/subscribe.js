@@ -40,7 +40,7 @@ export default function Subscribe() {
   const fetchData = (query) =>{
     setData([]);
     fetch(
-      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=40&order=date&q=${query}&regionCode=in&key=AIzaSyDpcRqLAhVCWYmJuKLqKMOuifWVFNvDyLU`
+      `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=40&order=date&q=${query}&regionCode=in&key=`
     )
       .then((res) => res.json())
       .then((data) => {
