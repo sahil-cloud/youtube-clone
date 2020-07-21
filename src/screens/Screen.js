@@ -12,7 +12,7 @@ export default function Screen(props) {
     const [loading,Setloading] = useState(false);
     const dispatch = useDispatch();
 
-    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${value}&key=AIzaSyDpcRqLAhVCWYmJuKLqKMOuifWVFNvDyLU`;
+    const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${value}&key=`;
 
     const MiniCardData = useSelector(state =>{
         return state
