@@ -23,11 +23,9 @@ export default function Explore() {
     const [Data, setData] = useState([]);
     const [loading, Setloading] = useState(true);
 
-    // const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${value}&key=AIzaSyDpcRqLAhVCWYmJuKLqKMOuifWVFNvDyLU`;
-
     useEffect(() =>{
         fetch(
-          `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=40&regionCode=in&key=AIzaSyDpcRqLAhVCWYmJuKLqKMOuifWVFNvDyLU`
+          `https://www.googleapis.com/youtube/v3/videos?part=snippet&chart=mostPopular&maxResults=40&regionCode=in&key=`
         )
           .then((res) => res.json())
           .then((data) => {
