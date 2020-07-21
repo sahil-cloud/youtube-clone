@@ -18,12 +18,8 @@ import Head from '../components/Header';
 import { TouchableOpacity } from "react-native-gesture-handler";
 import { useNavigation } from "@react-navigation/native";
 
-const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=40&q=india&regionCode=in&key=AIzaSyDpcRqLAhVCWYmJuKLqKMOuifWVFNvDyLU`;
+const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=40&q=india&regionCode=in&key=`;
 
-
-// const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${value}&key=AIzaSyDpcRqLAhVCWYmJuKLqKMOuifWVFNvDyLU`;
-
-//  https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&order=date&q=gaming&key=AIzaSyDpcRqLAhVCWYmJuKLqKMOuifWVFNvDyLU
 
 export default function Home() {
 
